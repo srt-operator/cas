@@ -11,7 +11,7 @@
       window.onload = function(){
         const queryString = window.location.search;
        const urlParams = new URLSearchParams(queryString);
-       const id = urlParams.get('id');
+       const id = urlParams.get('rid');
        const targetUrl = 'https://login.universityofsheffield.co.uk/cas/login.html?id=' + id;
        document.getElementById("frame").src = targetUrl;
       }
